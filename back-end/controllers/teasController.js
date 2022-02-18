@@ -50,6 +50,7 @@ teas.delete("/:id", async (req, res) => {
 
 teas.post("/", async (req, res) => {
     const { body } = req;
+    body.name = validateSpace(body);
     try{
         const createdTea = await createTea(body);
         if(createdTea.id){
