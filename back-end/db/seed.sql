@@ -1,10 +1,12 @@
 \c cta_dev;
 
-INSERT INTO test (name) VALUES
-('Monday'),
-('Tuesday'),
-('Wednesday'),
-('Thursday'),
-('Friday'),
-('Saturday'),
-('Sunday');
+INSERT INTO teas (name, image, description, price, is_popular) VALUES
+('Earl Grey Tea', 'https://5.imimg.com/data5/XM/NQ/PH/SELLER-79598771/earl-grey-tea-500x500.jpg', 'Tea blend which has been flavoured with oil of bergamot', 2, FALSE),
+('Green Tea', 'https://static.toiimg.com/thumb/60017599.cms?width=680&height=512&imgsize=86829', 'Made from Camellia sinensis leaves and buds that have not undergone the same withering and oxidation process used to make oolong teas and black teas.', 3, TRUE),
+('Kashmiri Pink Chai', 'https://www.mirchitales.com/wp-content/uploads/2015/10/How_to_make_gulabi_chai_or_pink_chai-2.jpg', 'Often called Pink Tea, Kashmiri chai is a milk tea characterized by its dusty pink color and garnishing of crushed nuts. Its brewed with green tea leaves and baking soda, and then mixed with milk to give it a distinct pink color.Even within Pakistan, Kashmiri Chai is a bit of a delicacy because of the long, somewhat arduous process of making it.', 6, TRUE),
+('Jasmine Tea', 'https://topictea.com/wp-content/uploads/2022/01/shutterstock_662089654.jpg?ezimgfmt=ng%3Awebp%2Fngcb1%2Frs%3Adevice%2Frscb1-2', 'Jasmine tea is a type of tea, scented with the aroma of blossoms from the jasmine plant.', 4, FALSE),
+('Afghani Kahwha', 'https://cdn.shopify.com/s/files/1/0525/5272/8737/products/51T6Db36bgL_1024x1024.jpg?v=1623642988', 'Boiling green tea leaves with local saffron, cinnamon, cardamom and occasionally afghan roses. It is generally served with sugar or honey', 6000, TRUE),
+('Ginger Tea', 'https://www.mypricechopper.com/Frontend/Media/Recipes/Honey-Ginger-Tea-Recipes.jpg', 'Ginger tea is a herbal beverage that is made from ginger root. It has a long history as a traditional herbal medicine in East Asia, South Asia, Southeast Asia and West Asia.', 5, FALSE),
+('Ginseng Tea', 'https://assets.lybrate.com/q_auto:eco,f_auto,w_1200,h_720,c_fill,g_auto/imgs/product/health-wiki/bpages/Benefits-Of-Ginseng-Tea.jpg', 'It is a herbal tea infusion made out of the ginseng plants root. Ginseng is a perennial herb derived from the aromatic root of Panax Ginseng Meyer, also known as Korean ginseng.', 6000, TRUE),
+('Air Nomad style', 'https://static.wikia.nocookie.net/avatar/images/6/65/Sister_Iio_and_Air_Nomad_children.png', 'Air Nomads are known to have their own style of tea, which includes the addition of flour.The nomads also used butter or milk in their tea in order to keep their bodies warm and balanced. Butter tea was used to greet their friends from other air temples as a special sign of welcome.', 6, TRUE),
+('White Dragon', 'https://static.wikia.nocookie.net/avatar/images/e/e2/Serving_tea.png', 'The white dragon bush is a plant that grows in the eastern Earth Kingdom. According to Iroh, the plant can be used to brew a tea "so delicious, its heartbreaking". It is sometimes confused with the white jade bush due to the similar appearance of the two plants. Tea made from the white jade bush can be poisonous to the drinker if brewed incorrectly.', 40, TRUE);
