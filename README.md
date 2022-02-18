@@ -3,8 +3,8 @@
 [Front-end deployed ](https://cocky-franklin-267d70.netlify.app/)
 -Heroku link
 [Back-End deployed ](https://laiba-cta-be.herokuapp.com/)
-
-
+-Trello 
+[ Trello-Board Link ](https://trello.com/b/rXaFu6xg/uncle-irohs-tea-shop)
 
 
 ## Getting Started
