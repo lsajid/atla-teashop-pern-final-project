@@ -1,8 +1,10 @@
-import React from 'react'
+import Teas from "../components/Teas"
 
 function Index() {
   return (
-    <div>Index</div>
+    <div>
+      <Teas/>
+    </div>
   )
 }
 

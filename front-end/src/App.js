@@ -8,7 +8,8 @@ import Show from "./pages/Show";
 import Edit from "./pages/Edit";
 import FourOFour from "./pages/FourOFour";
 //components 
-import NavBar from "./components/NavBar"
+import NavBar from "./components/NavBar";
+
 
 
 const API = process.env.REACT_APP_API_URL;
