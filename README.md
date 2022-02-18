@@ -1,10 +1,16 @@
-# PERN Final Project Template
+# Laiba Sajid ~~ PERN Final Project
+- Netlify link
+[Front-end deployed ](https://cocky-franklin-267d70.netlify.app/)
+-Heroku link
+[Back-End deployed ](https://laiba-cta-be.herokuapp.com/)
 
-- select `use this template`
-- clone this repo
+
+
 
 ## Getting Started
 
+- select `use this template`
+- clone this repo
 ### Project Structure
 
 ```
