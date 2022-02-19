@@ -9,6 +9,7 @@ import Edit from "./pages/Edit";
 import FourOFour from "./pages/FourOFour";
 //components 
 import NavBar from "./components/NavBar";
+import CustomizedBadges from "./components/CustomizedBadges"
 
 
 
@@ -19,6 +20,7 @@ function App() {
   return (
     <div>
       <NavBar/>
+      <CustomizedBadges/>
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
