@@ -1,8 +1,11 @@
 import React from 'react'
+import TeaEditForm from '../components/TeaEditForm'
 
 function Edit() {
   return (
-    <div>Edit</div>
+    <div>Edit
+      <TeaEditForm/>
+    </div>
   )
 }
 

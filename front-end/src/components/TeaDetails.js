@@ -7,8 +7,8 @@ import solid from "../assets/heart-solid.png";
 import regular from "../assets/heart-regular.png";
 import Button from '@mui/material/Button';
 import DeleteIcon from '@mui/icons-material/Delete';
-import SendIcon from '@mui/icons-material/Send';
 import Stack from '@mui/material/Stack';
+import HexagonIcon from '@mui/icons-material/Hexagon';
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -33,10 +33,11 @@ function TeaDetails() {
             }).catch((err) => {
                 console.log(err);
             })
-    }
+    };
+
   return (
     <article>
-        <h6> TeaDetails </h6>
+
         <Container maxWidth="sm">
             <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }}>
                 <h2>{tea.name}</h2>
@@ -48,13 +49,16 @@ function TeaDetails() {
                 <div>
                     <img src={tea.image} alt={tea.name}/>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>{tea.description}</div>
+                <div> Price: {tea.price} copper coins <HexagonIcon/> </div>
             </Box>
             <Stack direction="row" spacing={2}>
-                <Button variant="outlined" startIcon={<DeleteIcon />}>Delete</Button>
-                <Button variant="outlined" endIcon={""}>Back</Button>
+                <Button variant="outlined" onClick={handleDelete} startIcon={<DeleteIcon />}>Delete</Button>
+                
+                    <Button variant="outlined" endIcon={""}> <Link to={`/teas/${id}/edit`}>Edit</Link></Button>    
+                <Link to={`/teas`}> 
+                    <Button variant="outlined" endIcon={""}>Back</Button>
+                </Link>
             </Stack>
         </Container>
     </article>

@@ -1,8 +1,11 @@
-import React from 'react'
+import TeaNewForm from "../components/TeaNewForm"
+
 
 function New() {
   return (
-    <div>New</div>
+    <div>
+      <TeaNewForm/>
+    </div>
   )
 }
 
