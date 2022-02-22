@@ -39,7 +39,7 @@ function TeaDetails() {
     <article>
 
         <Container maxWidth="sm">
-            <Box sx={{ bgcolor: '#cfe8fc', height: '100vh' }}>
+            <Box sx={{ bgcolor: '#283618', height: '100vh' }}>
                 <h2>{tea.name}</h2>
                 {tea.is_popular ? (
                     <img src={solid} alt="popular" />

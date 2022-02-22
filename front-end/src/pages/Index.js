@@ -2,7 +2,7 @@ import Teas from "../components/Teas"
 
 function Index() {
   return (
-    <div>
+    <div className="index-page">
       <Teas/>
     </div>
   )

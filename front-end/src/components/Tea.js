@@ -8,7 +8,8 @@ import { Typography } from "@mui/material";
 
 function Tea({ tea }){
     return(
-        <Card sx={{ maxWidth: 345 }}>
+        <div>
+        <Card sx={{ bgcolor: '#fefae0',maxWidth: 345, maxHeight:'200vh' }}>
             <CardMedia
                 component="img"
                 height="140"
@@ -29,6 +30,7 @@ function Tea({ tea }){
                 </Link>
             </CardActions>
         </Card>
+        </div>
     );
 }
 

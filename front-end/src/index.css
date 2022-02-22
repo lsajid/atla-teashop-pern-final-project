@@ -1,13 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background-color: #283618;
+  font-family: optima;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-bar{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  background-color: #fefae0;
+
 }
+
+.nav-bar img{
+  float: left;
+  height: 150px;
+  min-width: auto;
+}
+
+.options{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar a:link:hover {
+  text-decoration: none;
+}
+
+nav {
+  position: absolute;
+  top: 10%;
+  display: table;
+  transform: translateY(-50%);
+}
+
+nav a {
+  position: relative;
+  width: 33.333%;
+  display: table-cell;
+  text-align: center;
+  color: #605050;
+  text-decoration: none;
+  padding: 10px 40px;
+  transition: 0.2s ease color;
+}
+
+nav a:before,
+nav a:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.2s ease transform;
+}
+
+nav a:before {
+  top: 0;
+  left: 10px;
+  width: 6px;
+  height: 6px;
+}
+
+nav a:after {
+  top: 5px;
+  left: 18px;
+  width: 4px;
+  height: 4px;
+}
+
+nav a:nth-child(1):before {
+  background-color: rgb(85, 85, 75);
+}
+
+nav a:nth-child(1):after {
+  background-color: rgb(165, 165, 83);
+}
+
+nav a:hover {
+  color: rgb(113, 64, 64);
+}
+
+nav a:hover:before,
+nav a:hover:after {
+  transform: scale(1);
+}
+
+.index-teas-container main{
+  margin-top: 150px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:10px;
+  border-radius: 10px;
+  box-shadow: 10px 7px 15px -5px;
+  border-style: double;
+  border-color: rgb(199, 195, 80);
+  border-width: 10px;
+}
+
+.tea-card{
+  border-radius: 10px;
+  box-shadow: 10px 7px 15px -5px;
+  border-style: groove;
+  border-color: rgb(121, 119, 66);
+  border-width: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+  padding: 10px
+}
+
+.tea-card div{
+  justify-content: center;
+}
+

@@ -15,11 +15,14 @@ function Teas() {
     }, []);
 
   return (
-    <div>
+    <div className="index-teas-container">
         <main>
+
             {teas.map((tea) =>{
                 return (
-                    <Tea key={tea.id} tea={tea}/>
+                    <div className="tea-card">
+                        <Tea key={tea.id} tea={tea}/>
+                    </div>
                 )
             })}
         </main>
