@@ -17,7 +17,6 @@ function Teas() {
   return (
     <div className="index-teas-container">
         <main>
-
             {teas.map((tea) =>{
                 return (
                     <div className="tea-card">

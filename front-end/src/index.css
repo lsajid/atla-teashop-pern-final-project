@@ -24,15 +24,15 @@ body{
   justify-content: center;
 }
 
-.nav-bar a:link:hover {
-  text-decoration: none;
-}
-
 nav {
   position: absolute;
-  top: 10%;
+  top: 12%;
   display: table;
   transform: translateY(-50%);
+  border-radius: 10px;
+  border-style: double;
+  border-color: rgb(211, 207, 67);
+  border-width: 10px;
 }
 
 nav a {
@@ -44,6 +44,7 @@ nav a {
   text-decoration: none;
   padding: 10px 40px;
   transition: 0.2s ease color;
+  
 }
 
 nav a:before,
@@ -146,3 +147,37 @@ nav a:hover:after {
   padding: 20px;
 }
 
+.hrFancy {
+  margin: 10px;
+  border: 0;
+  border-top: medium double rgb(111, 36, 36);
+  height: 1px;
+  overflow: visible;
+  padding: 0;
+  color: rgb(101, 59, 59);
+  text-align: center;
+}
+
+.edit-container, .new-container{
+  border-radius: 10px;
+  box-shadow: 10px 7px 15px -5px;
+  border-style: double;
+  border-color: rgb(199, 195, 80);
+  border-width: 10px;
+  padding: 40px;
+  margin-top: 140px;
+}
+
+.edit-info, .new-info{
+  border-radius: 10px;
+  box-shadow: 10px 7px 15px -5px;
+  border-style: groove;
+  border-color: rgb(121, 119, 66);
+  border-width: 10px;
+  margin: 5px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fefae0;
+}

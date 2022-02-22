@@ -12,7 +12,7 @@ function NavBar() {
               <Link to="/teas">View All Menu</Link>
           </h3>
           <h3>
-              <Link to="/teas/new">Create New Tea</Link>
+              <Link to="/teas/new">Create New</Link>
           </h3>
           <h3>
               <Link to="/"> <HomeIcon/>Home </Link>

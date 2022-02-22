@@ -39,7 +39,9 @@ function TeaDetails() {
     <article >
         <Container className="show-container">
             <Box sx={{ bgcolor: '#fefae0' }} className="show-info">
+                <hr className='hrFancy'/>
                 <h2>{tea.name}</h2>
+                <hr className='hrFancy'/>
                 {tea.is_popular ? (
                     <img src={solid} alt="popular" />
                 ) : (
@@ -50,6 +52,7 @@ function TeaDetails() {
                 </div>
                 <div>{tea.description}</div>
                 <div> Price: {tea.price} copper coins <HexagonIcon/> </div>
+                <hr className='hrFancy'/>
                 <Stack direction="row" spacing={2}>
                     <Button variant="outlined" onClick={handleDelete} startIcon={<DeleteIcon />}>Delete</Button>
                     
@@ -58,6 +61,7 @@ function TeaDetails() {
                         <Button variant="outlined" endIcon={""}>Back</Button>
                     </Link>
                 </Stack>
+                <hr className='hrFancy'/>
             </Box>
         </Container>
     </article>

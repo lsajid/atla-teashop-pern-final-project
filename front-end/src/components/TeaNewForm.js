@@ -11,6 +11,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import FormHelperText from '@mui/material/FormHelperText';
 import FormControl from '@mui/material/FormControl';
 import TextField from '@mui/material/TextField';
+import Stack from '@mui/material/Stack';
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -45,8 +46,9 @@ function TeaNewForm() {
   }
 
   return (
-    <div>
-    <Box sx={{ display: 'flex', flexWrap: 'wrap'}}>
+    <div className="new-container">
+    <Box sx={{ display: 'flex', flexWrap: 'wrap'}} className='new-info'>
+      <h1>Create New</h1>
     <form onSubmit={handleSubmit}>
             <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined">
                 <InputLabel htmlFor="name">Name</InputLabel>
@@ -91,10 +93,12 @@ function TeaNewForm() {
                     label="price"
                 />
             </FormControl>
-            <Button type="submit" variant="outlined" endIcon={""}>Submit</Button>
+            <Stack direction='row' spacing={2}>
+              <Button type="submit" variant="outlined" endIcon={""}>Submit</Button>
+              <Link to={`/teas`}> <Button variant="outlined">Back</Button> </Link>
+            </Stack>
         </form>
     </Box>
-    <Link to={`/teas`}> <Button variant="outlined">Back</Button> </Link>
 </div>
   )
 }
