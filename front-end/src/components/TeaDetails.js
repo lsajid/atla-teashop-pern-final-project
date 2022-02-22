@@ -36,10 +36,9 @@ function TeaDetails() {
     };
 
   return (
-    <article>
-
-        <Container maxWidth="sm">
-            <Box sx={{ bgcolor: '#283618', height: '100vh' }}>
+    <article >
+        <Container className="show-container">
+            <Box sx={{ bgcolor: '#fefae0' }} className="show-info">
                 <h2>{tea.name}</h2>
                 {tea.is_popular ? (
                     <img src={solid} alt="popular" />
@@ -51,15 +50,15 @@ function TeaDetails() {
                 </div>
                 <div>{tea.description}</div>
                 <div> Price: {tea.price} copper coins <HexagonIcon/> </div>
+                <Stack direction="row" spacing={2}>
+                    <Button variant="outlined" onClick={handleDelete} startIcon={<DeleteIcon />}>Delete</Button>
+                    
+                        <Button variant="outlined" endIcon={""}> <Link to={`/teas/${id}/edit`}>Edit</Link></Button>    
+                    <Link to={`/teas`}> 
+                        <Button variant="outlined" endIcon={""}>Back</Button>
+                    </Link>
+                </Stack>
             </Box>
-            <Stack direction="row" spacing={2}>
-                <Button variant="outlined" onClick={handleDelete} startIcon={<DeleteIcon />}>Delete</Button>
-                
-                    <Button variant="outlined" endIcon={""}> <Link to={`/teas/${id}/edit`}>Edit</Link></Button>    
-                <Link to={`/teas`}> 
-                    <Button variant="outlined" endIcon={""}>Back</Button>
-                </Link>
-            </Stack>
         </Container>
     </article>
   )
