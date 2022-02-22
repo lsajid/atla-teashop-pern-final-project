@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS teas;
+
 CREATE TABLE teas (
     id SERIAL PRIMARY KEY, 
     name TEXT,
