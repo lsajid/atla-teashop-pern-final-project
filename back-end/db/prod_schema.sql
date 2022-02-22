@@ -1,6 +1,8 @@
-DROP TABLE IF EXISTS test;
-
-CREATE TABLE test (
+CREATE TABLE teas (
     id SERIAL PRIMARY KEY, 
-    name TEXT
+    name TEXT,
+    image TEXT,
+    description TEXT,
+    price INTEGER DEFAULT 0,
+    is_popular BOOLEAN
 );

@@ -6,13 +6,14 @@ const validateSpace = require("../validations/stringValidation.js");
 teas.get("/", async (req, res) => {
     try{
         const allTeas = await getAllTeas();
-        if(allTeas[0]){
-            res.status(200).json(allTeas)
-        }else{
-            res.status(500).json({
-                error: "Information cant be found in database",
-            });
-        }
+        console.log(allTeas);
+        // if(allTeas[0]){
+        //     res.status(200).json(allTeas)
+        // }else{
+        //     res.status(500).json({
+        //         error: "Information cant be found in database",
+        //     });
+        // }
     }catch(err){
         console.log(err)
     }
