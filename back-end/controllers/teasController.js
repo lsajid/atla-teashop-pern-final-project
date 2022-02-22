@@ -7,13 +7,13 @@ teas.get("/", async (req, res) => {
     try{
         const allTeas = await getAllTeas();
         console.log(allTeas);
-        // if(allTeas[0]){
-        //     res.status(200).json(allTeas)
-        // }else{
-        //     res.status(500).json({
-        //         error: "Information cant be found in database",
-        //     });
-        // }
+        if(allTeas[0]){
+            res.status(200).json(allTeas)
+        }else{
+            res.status(500).json({
+                error: "Information cant be found in database",
+            });
+        }
     }catch(err){
         console.log(err)
     }
