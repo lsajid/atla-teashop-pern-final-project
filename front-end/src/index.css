@@ -88,7 +88,7 @@ nav a:hover:after {
 }
 
 .index-teas-container main{
-  margin-top: 150px;
+  margin-top: 220px;
   padding: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
