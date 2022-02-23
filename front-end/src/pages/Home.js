@@ -76,7 +76,7 @@ function Home() {
 
 
   return (
-    <div>
+    <div className='login-wrapper'>
       <h3>Sign in!!</h3>
       <img src="https://pbs.twimg.com/media/EcsWb-_XoA0jXVl.jpg" alt="family-photo"/>
       <div className='login-container'>
