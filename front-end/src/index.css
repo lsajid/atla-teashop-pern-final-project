@@ -1,5 +1,5 @@
 body{
-  background-color: #283618;
+  background-image: url("https://www.wallpaperstogo.com/images/product/large/201792.jpg");
   font-family: optima;
 }
 
@@ -104,6 +104,7 @@ nav a:hover:after {
   border-style: double;
   border-color: rgb(199, 195, 80);
   border-width: 10px;
+  background-color: #506050;
 }
 
 .tea-card{
@@ -119,6 +120,7 @@ nav a:hover:after {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("https://www.wallpapertip.com/wmimgs/160-1600587_kind-of-white-wallpaper-flowers-cream-gold-green.jpg");
 }
 
 .tea-card div{
@@ -133,7 +135,7 @@ nav a:hover:after {
   border-width: 10px;
   padding: 40px;
   margin-top: 140px;
-  
+  background-color: #506050;
 }
 
 .show-info{
@@ -173,7 +175,8 @@ nav a:hover:after {
   border-color: rgb(199, 195, 80);
   border-width: 10px;
   padding: 40px;
-  margin-top: 140px;
+  margin-top: 180px;
+  background-color: #506050;
 }
 
 .edit-info, .new-info{
@@ -190,9 +193,74 @@ nav a:hover:after {
   background-color: #fefae0;
 }
 
+
+.grid-wrapper{
+  margin-top: 160px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
+.image-container{
+
+
+}
+
 .login-wrapper{
-  margin-top: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 7px 15px -5px;
+  border-style: double;
+  border-color: rgb(199, 195, 80);
+  border-width: 10px;
+  margin-top: 45px;
+  background-color: #506050;
+}
+
+.login-container{
+  align-items: center;
+  justify-content: center;
+  background-color: #fefae0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 10px 7px 15px -5px;
+  border-style: groove;
+  border-color: rgb(121, 119, 66);
+  border-width: 10px;
+}
+
+.register-container{
+  align-items: center;
+  justify-content: center;
+  background-color: #fefae0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 10px 7px 15px -5px;
+  border-style: groove;
+  border-color: rgb(121, 119, 66);
+  border-width: 10px;
+}
+
+.account-container{
+  align-items: center;
+  justify-content: center;
+  background-color: #fefae0;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 10px 7px 15px -5px;
+  border-style: groove;
+  border-color: rgb(121, 119, 66);
+  border-width: 10px;
+}
+
+.form{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }

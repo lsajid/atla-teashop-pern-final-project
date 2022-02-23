@@ -76,52 +76,55 @@ function Home() {
 
 
   return (
-    <div className='login-wrapper'>
-      <h3>Sign in!!</h3>
-      <img src="https://pbs.twimg.com/media/EcsWb-_XoA0jXVl.jpg" alt="family-photo"/>
-      <div className='login-container'>
-        <h2>Login</h2>
-        <form onSubmit={handleLoginSubmit}>
-          <label htmlFor="login-email">Email</label>
-          <input 
-            id="loginEmail"
-            type="text"
-            value={loginUser.loginEmail}
-            placeholder="type here"
-            onChange={handleInputChange}
-          />
-          <label htmlFor="login-password">Password</label>
-          <input 
-            id="loginPassword"
-            value={loginUser.loginPassword}
-            type="text"
-            placeholder="..."
-            onChange={handleInputChange}
-          />
-          <button>Login Account</button>
-        </form>
-      </div>
-      <div className='register-container'>
-        <h2>New User</h2>
-        <form onSubmit={handleCreateNewSubmit}>
-          <label htmlFor='registerEmail'>Email</label>
-          <input 
-            id="registerEmail"
-            value={registerUser.registerEmail}
-            placeholder='type here'
-            type="text"
-            onChange={handleInputChange}
-          />
-          <label htmlFor='registerPassword'>Password</label>
-          <input 
-            id="registerPassword"
-            value={registerUser.registerPassword}
-            placeholder="..."
-            type="text"
-            onChange={handleInputChange}
-          />
-          <button>Create Account</button>
-        </form>
+    <div className='grid-wrapper'>
+      <div className='login-wrapper'>
+        <div className='image-container'>
+          <img src="https://pbs.twimg.com/media/EcsWb-_XoA0jXVl.jpg" alt="family-photo"/>
+        </div>
+        <div className='login-container'>
+          <h2>Login</h2>
+          <form onSubmit={handleLoginSubmit} className="form">
+            <label htmlFor="login-email">Email</label>
+            <input 
+              id="loginEmail"
+              type="text"
+              value={loginUser.loginEmail}
+              placeholder="type here"
+              onChange={handleInputChange}
+            />
+            <label htmlFor="login-password">Password</label>
+            <input 
+              id="loginPassword"
+              value={loginUser.loginPassword}
+              type="text"
+              placeholder="..."
+              onChange={handleInputChange}
+            />
+            <button>Login Account</button>
+          </form>
+        </div>
+        <div className='register-container'>
+          <h2>New User</h2>
+          <form onSubmit={handleCreateNewSubmit} className="form">
+            <label htmlFor='registerEmail'>Email</label>
+            <input 
+              id="registerEmail"
+              value={registerUser.registerEmail}
+              placeholder='type here'
+              type="text"
+              onChange={handleInputChange}
+            />
+            <label htmlFor='registerPassword'>Password</label>
+            <input 
+              id="registerPassword"
+              value={registerUser.registerPassword}
+              placeholder="..."
+              type="text"
+              onChange={handleInputChange}
+            />
+            <button>Create Account</button>
+          </form>
+        </div>
         <div className='account-container'>
           <h3>User Logged In:</h3>
           {user?.email}
