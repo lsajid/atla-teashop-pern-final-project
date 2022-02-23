@@ -58,7 +58,6 @@ function Home() {
   const handleLoginSubmit = (event) => {
     event.preventDefault();
     login();
-    window.alert(`You have been signed in... Welcome ${user.email}`);
     setLoginUser({
       loginEmail: "",
       loginPassword: ""
