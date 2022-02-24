@@ -15,14 +15,3 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
 export default auth;
-
-
-// const firebaseConfig = {
-//   apiKey: "AIzaSyCHerbObx85_AxjyeAzsXnY9un2VMyrtpI",
-//   authDomain: "pern-final.firebaseapp.com",
-//   projectId: "pern-final",
-//   storageBucket: "pern-final.appspot.com",
-//   messagingSenderId: "654685212221",
-//   appId: "1:654685212221:web:8e5d288e0525d287e52454",
-//   measurementId: "G-B2JTZJP2PT"
-// };
